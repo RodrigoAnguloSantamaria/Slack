@@ -1,0 +1,54 @@
+.b-know{
+    background-color: white;
+    &__title{
+        width: 100%;
+        @include flex(column,center,center);
+        background-color: white;
+    }
+    &__buttons{
+        width: 100%;
+        @include flex(column,center,center);
+        background-color: white;
+    }
+    &__data{
+        width: 100%;
+        @include flex(column,center,center);
+    }
+    &__datadiv{
+        width: 60%;
+        @include flex(column,center,center);
+        margin:20px 0px;
+    }
+    &__button{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:767px){
+    .b-know__buttons{
+        width: 100%;
+        @include flex(column,center,center);
+        background-color: white;
+
+    }
+    .b-know__data{
+        width: 100%;
+        @include flex(column,center,center);
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px){
+    .b-know__buttons{
+        width: 80%;
+        @include flex(row,center,center);
+        background-color: white;
+
+    }
+    .b-know__data{
+        width: 90%;
+        @include flex(row,center,center);
+        margin-bottom: 20px;
+    }
+}    

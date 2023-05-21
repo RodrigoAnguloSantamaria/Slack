@@ -1,0 +1,27 @@
+.b-discover{
+    &buttons__div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        
+    }
+    &__button{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media (min-width:1024px){
+    .b-main__discover{
+        height: 200px;
+
+    }
+    .b-discoverbuttons__div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .b-discover__button{
+        margin: 20px 10px;
+    }
+}

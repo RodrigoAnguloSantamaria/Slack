@@ -1,0 +1,86 @@
+.b-text{
+    font-family: helvetica,arial;
+    @include textFormat(16px,400,white);
+
+    &--center{
+    text-align: center;
+    }
+    &--small{
+        font-size: 12px;
+    }
+    &--medium{
+        font-size: 24px;
+    }
+    &--xl{
+        font-size: 36px;
+    }
+    &--black{
+        color:black;
+    }
+    &--large{
+        font-size: large;
+    }
+    &--gray{
+        color:gray;
+    }
+    &--italic{
+        font-style: italic;
+    }
+    &--bold{
+        font-weight: bold;
+    }
+    &--margin{
+        margin:20px 20px;
+
+    }
+    &--updownmargin{
+        margin:20px 0px;
+
+    }
+    &--rlmargin{
+        margin: 0px 20px;
+    }
+    &--lineheight{
+        line-height: 1.5;
+    }
+    &--left{
+        text-align: left;
+    }
+    &__headerTitle{
+    @include textFormat(34px,600,white);
+    }
+    &__mainTitle{
+    @include textFormat(40px,600,white);
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    &__mainTitle span{
+    color: orange;
+    }
+    &__newsTitle{
+    @include textFormat(28px,600,black);
+    width: 70%;
+    margin:20px 20px;
+    
+    }
+    &__newsTitle--reverse{
+    text-align: right;
+    }
+    &__news{
+    margin: 10px 20px;
+    @include textFormat(16px,500,black);
+    width: 80%;
+    line-height: 1.5;
+    }
+
+    &__partners{
+    @include textFormat(16px,600,black);
+    background-color: #f4ede4;
+   
+    margin:10px 30px;
+    
+    }
+    &__percent{
+        @include textFormat(40px,700,#4a154b);
+    }
+}

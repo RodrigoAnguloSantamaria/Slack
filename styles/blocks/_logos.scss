@@ -1,0 +1,46 @@
+.b-logos{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f4ede4;
+    
+    &__airbnb{
+        width: 30%;
+        margin:10px;
+        
+        max-width: fit-content;
+    }
+    &__nasa{
+        width: 10%;
+        margin:10px;
+        max-width: fit-content;
+    }
+    &__uber{
+        width: 30%;
+        margin:10px;
+        max-width: fit-content;
+    }
+    &__target{
+        width: 10%;
+        margin:10px;
+        max-width: fit-content;
+    }
+    &__nytimes{
+        width: 60%;
+        margin:10px;
+        max-width: fit-content;
+    }
+    &__etsy{
+        width: 20%;
+        margin:10px;
+        max-width: fit-content;
+    }
+    &__img{
+        max-width: 100%;
+        height:50px;
+        background-color: #f4ede4;
+    }
+}

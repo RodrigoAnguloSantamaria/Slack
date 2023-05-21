@@ -1,0 +1,16 @@
+@mixin flex($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin mdefaultFlex{
+    width: 100%;
+    @include flex(column,center,center);
+}
+@mixin textFormat($size,$weight,$color){
+    font-size:$size;
+    font-weight: $weight;
+    color: $color;
+
+}

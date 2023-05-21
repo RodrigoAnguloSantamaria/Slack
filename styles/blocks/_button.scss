@@ -1,0 +1,87 @@
+.b-button{
+
+    &__white{
+    width: 70%;
+    font-family: helvetica,arial;
+    @include textFormat(12px,800,#4a154b);
+    @include flex(row,center,center);
+    background-color: white;
+    text-transform: uppercase;
+    margin:20px 0px;
+    height:50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    object-fit: fill;
+        &--border{
+            border: 2px solid #852487;
+            width:70%;
+            max-width: 70%;
+        }
+        &--reverse{
+            background-color: #852487;
+            margin:0px 0px;
+            color:white;
+            width:70%;
+            max-width: 70%;
+            &:hover{
+                background-color: #4a154b;
+            }
+        }
+        &--header{
+            width:140px;
+            max-width: 140px;
+            height:30px;
+            font-size: 12px;
+            font-weight: 400;
+         }
+         &--headerReverse{
+            width: 250px;
+            max-width:250px;
+            height:30px;
+            font-size: 12px;
+            font-weight: 400;
+            color: white;
+            background-color: #4a154b;
+            display: none;
+            text-align: center;
+            vertical-align: middle;
+            
+         }
+
+        &:hover{
+            border:3px solid #4a154b;
+            transition: none;
+        }
+    }
+
+    &__logo{
+    width: 20px;
+    height:20px;
+    padding:2px;
+    margin-left: 2px;
+    }
+
+    &__blue{
+    width: 70%;
+    font-family: helvetica,arial;
+    @include textFormat(12px,800,white);
+    @include flex(row,start,center);
+    background-color: #007aFF;
+    text-transform: uppercase;
+    margin:2px 0px;
+    height:50px;
+    border-radius: 10px;
+    border: 2px solid #007aFF;
+   
+
+        &:hover{
+        
+            border:2px solid #4a154b;
+            transition: none;
+        }
+        & span{
+        width: 100%;
+        text-align: center;
+        }
+    }
+}

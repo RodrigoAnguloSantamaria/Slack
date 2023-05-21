@@ -1,0 +1,198 @@
+.b-explore{
+    &__title{
+        margin: 40px 10px;
+    }
+    &__item{
+        width:70%;
+        
+        @include flex(column,center,left);
+        background-color: #f4ede4;
+        position: relative;
+        
+    }
+   
+    &__itemfirst{
+        width: 100%;
+        
+        background-color: white;
+
+    }
+    &__itemsecond{
+        width: 100%;
+        display: none;
+        background-color: white;
+        position: absolute;
+        
+
+    }
+    &__itemthird{
+        width: 100%;
+        display: none;
+        background-color: white;
+        position: absolute;
+        
+
+    }
+    &__itemfourth{
+        width: 100%;
+        display: none;
+        background-color: white;
+        position: absolute;
+        
+
+    }
+    
+    &__img{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+    &__link{
+        @include textFormat(16px,600,#1e6da8 );
+        margin-top: 30px;
+        
+    }
+   
+    &__buttons{
+        width: 100%;
+        @include flex(row,center,center);
+        background-color:#f4ede4 ;
+        margin:20px 0px;
+    }
+    &__button{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: #e642e8;
+        &:hover{
+            background-color: #4a154b;
+        }
+       
+    }
+
+
+}
+
+@media (max-width: 767px){
+    .b-explore__item{
+        width:70%;
+        
+        @include flex(column,center,left);
+        background-color: #f4ede4;
+        position: relative;
+        
+    }
+    .b-explore__itemfirst{
+        width: 100%;
+        
+        background-color: white;
+    }
+
+    .b-explore__itemsecond{
+        width: 100%;
+        display: none;
+        background-color: white;
+        position: absolute;
+    }
+    .b-explore__itemthird{
+        width: 100%;
+        display: none;
+        background-color: white;
+        position: absolute;
+    }
+    .b-explore__itemfourth{
+        width: 100%;
+        display: none;
+        background-color: white;
+        position: absolute;
+    }
+    .b-explore__buttons{
+        width: 100%;
+        @include flex(row,center,center);
+        background-color:#f4ede4 ;
+        margin:20px 0px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .b-explore__item{
+        position: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 30px;
+        
+    }
+    .b-explore__itemfirst{
+        visibility: visible;
+        position:unset;
+        width: 40%;
+        margin: 10px;
+    }
+    
+    .b-explore__itemsecond{
+        /*visibility: visible;*/
+        position:unset;
+        display: unset;
+        width: 40%;
+        margin: 10px;
+    }
+    .b-explore__itemthird{
+        position: unset;
+        display: unset;
+        width: 40%;
+        margin: 10px;
+    }
+    .b-explore__itemfourth{
+        position: unset;
+        display: unset;
+        width: 40%;
+        margin: 10px;
+    }
+    .b-explore__buttons{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .b-explore__item{
+        position: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 30px;
+        
+    }
+    .b-explore__itemfirst{
+        visibility: visible;
+        position:unset;
+        width: 20%;
+        margin: 10px;
+    }
+
+    .b-explore__itemsecond{
+        /*visibility: visible;*/
+        position:unset;
+        display: unset;
+        width: 20%;
+        margin: 10px;
+    }
+    .b-explore__itemthird{
+        position: unset;
+        display: unset;
+        width: 20%;
+        margin: 10px;
+    }
+    .b-explore__itemfourth{
+        position: unset;
+        display: unset;
+        width: 20%;
+        margin: 10px;
+    }
+    .b-explore__buttons{
+        display: none;
+    }
+}
